@@ -1,22 +1,3 @@
-// const myGuess = Math.floor(Math.random() * 50 + 1);
-// const form = document.getElementById('inputForm');
-// const inputElement = document.getElementById('inputField');
-// const messageParagraph = document.createElement('p');
-// document.body.append(messageParagraph);
-
-// form.addEventListener('submit', (event) => {
-//   let message = '';
-//   if (Number(inputElement.value) === myGuess) {
-//     message = 'Acesta este numarul. A winner is you :)';
-//   } else if (Number(inputElement.value) > myGuess) {
-//     message = 'Numarul pe care il cauti este mai mic. Mai baga o fisa';
-//   } else {
-//     message = 'Numarul pe care il cauti este mai mare. Mai baga o fisa';
-//   }
-//   messageParagraph.innerText = message;
-//   event.preventDefault();
-// });
-
 const generatedNumber = Math.floor(Math.random() * 100 +1);
 const form = document.getElementById('inputForm');
 const inputField = document.getElementById('inputField');
