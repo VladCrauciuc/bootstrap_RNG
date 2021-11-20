@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="vh-100 bg-secondary bg-gradient">
+    <div class="container d-flex flex-column bg-dark bg-gradient mt-5 p-5 rounded position-static">
+        <div class="row text-center mb-4">
+            <div class="col d-flex flex-column">
+                <span class="text-white h2">I'm thinking of a number between 1 and 100.</span>
+                <span class="text-white">What number am I thinking of?</span>
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center mb-4">
+            <div class="col-12 col-sm-6 text-center">
+                <form action="" id="inputForm">
+                    <input type="number" class="form-control mb-4" name="inputField" id="inputField" placeholder="Your guess here">
+
+                    <button type="submit" class="btn btn-primary px-5 py-3">Is this it?</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="messageContainer" class="row text-center d-none justify-content-center align-items-center">
+            <div id="messageType" class="col-12 col-sm-8 alert alert-warning">
+                <span id="messageSpan" class="fw-bold"></span>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
