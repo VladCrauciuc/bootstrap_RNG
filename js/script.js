@@ -15,14 +15,17 @@ form.addEventListener('submit', (event) => {
         messageType.classList.remove('alert-warning');
         messageType.classList.add('alert-success');
         restartButton.classList.remove('d-none');
+        form.reset();
     } else if (Number(inputField.value) > generatedNumber) {
         message = 'The number is smaller than your guess. Try again';
         messageContainer.classList.add('d-flex');
         messageContainer.classList.remove('d-none');
+        form.reset();
     } else {
         message = 'The number is greater than your guess. Try again';
         messageContainer.classList.add('d-flex');
         messageContainer.classList.remove('d-none');
+        form.reset();
     }
     messageSpan.innerText = message;
     event.preventDefault();
