@@ -6,12 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MiniOrganizer v1.0</title>
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="/css/main.css">
 </head>
 
 <body class="bg-dark d-flex flex-column align-items-center">
   <h1 class="text-light mt-5">MiniOrganizer <span>(v1.0)</span></h1>
-  <form class="container p-md-0 mt-5 bg-warning*">
+  <form class="container justify-content-center p-md-0 mt-5 bg-warning*">
     <!-- Faction Select -->
     <div class="form-floating mb-3">
       <select class="form-select" id="floatingSelect">
@@ -88,7 +88,7 @@
       <label class="form-check-label text-light" for="flexSwitchCheckDefault">Has Heavy Weapon</label>
     </div>
     <!-- Heavy Weapon -->
-    <div class="form-floating">
+    <div class="form-floating mb-3">
       <select class="form-select" id="floatingSelect">
         <option value="" selected disabled="disabled" hidden>Select your Heavy Weapon</option>
         <option value="0">Power Fist</option>
@@ -97,9 +97,11 @@
       </select>
       <label for="floatingSelect">Squad</label>
     </div>
+
+    <button class="btn btn-primary ">Button</button>
   </form>
 
-  <script src="js/main.js"></script>
+  <script src="/js/main.js"></script>
 </body>
 
 </html>
