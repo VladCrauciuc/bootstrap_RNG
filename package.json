@@ -1,18 +1,25 @@
 {
-  "name": "ex01",
+  "name": "miniorganizer",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "sass ./scss/app.scss ./css/style.css",
-    "minify": "sass ./scss/app.scss ./css/style.css --style compressed",
-    "watch": "sass --watch ./scss/app.scss:./css/style.css"
+    "start": "sass ./scss/main.scss ./css/main.css",
+    "minify": "sass ./scss/main.scss ./css/main.css --style compressed",
+    "watch": "sass --watch ./scss/main.scss:./css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VladCrauciuc/miniorganizer.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VladCrauciuc/miniorganizer/issues"
+  },
+  "homepage": "https://github.com/VladCrauciuc/miniorganizer#readme",
   "dependencies": {
-    "bootstrap": "^5.1.0",
-    "sass": "^1.37.5"
+    "bootstrap": "^5.1.3"
   }
 }

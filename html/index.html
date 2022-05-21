@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MiniOrganizer v1.0</title>
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body class="bg-dark d-flex flex-column align-items-center">
+  <h1 class="text-light mt-5">MiniOrganizer <span>(v1.0)</span></h1>
+  <form class="container p-md-0 mt-5 bg-warning*">
+    <!-- Faction Select -->
+    <div class="form-floating mb-3">
+      <select class="form-select" id="floatingSelect">
+        <option value="" selected disabled="disabled" hidden>Select your Army</option>
+        <option value="0">Space Marines</option>
+        <option value="1">Orks</option>
+        <option value="2">Imperial Guard</option>
+      </select>
+      <label for="floatingSelect">Army</label>
+    </div>
+    <!-- Squad Select -->
+    <div class="form-floating mb-3">
+      <select class="form-select" id="floatingSelect">
+        <option value="" selected disabled="disabled" hidden>Select your Squad</option>
+        <option value="0">Tactical Squad</option>
+        <option value="1">Assault Squad</option>
+        <option value="2">Devastator Squad</option>
+      </select>
+      <label for="floatingSelect">Squad</label>
+    </div>
+    <!-- Model Number -->
+    <div class="form-floating mb-3">
+      <input type="number" class="form-control" id="modelNumber" placeholder="Model Number">
+      <label for="modelNumber">Select number of models (between 5 and 10)</label>
+    </div>
+    <!-- Squad Leader Switch -->
+    <div class="form-check form-switch mb-3">
+      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+      <label class="form-check-label text-light" for="flexSwitchCheckDefault">Has Squad Leader</label>
+    </div>
+    <!-- Squad Leader Weapons Row -->
+    <div class="row g-3 mb-3 d-none* leader-weapons-row">
+      <div class="col-6">
+        <div class="form-floating">
+          <select class="form-select" id="floatingSelect">
+            <option value="" selected disabled="disabled" hidden>Select your Squad Leader Melee Weapon</option>
+            <option value="0">Power Fist</option>
+            <option value="1">Chainsword</option>
+            <option value="2">Lightning Claw</option>
+          </select>
+          <label for="floatingSelect">Squad</label>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="form-floating">
+          <select class="form-select" id="floatingSelect">
+            <option value="" selected disabled="disabled" hidden>Select your Squad Leader Ranged Weapon</option>
+            <option value="0">Tactical Squad</option>
+            <option value="1">Assault Squad</option>
+            <option value="2">Devastator Squad</option>
+          </select>
+          <label for="floatingSelect">Squad</label>
+        </div>
+      </div>
+    </div>
+    <!-- Special Weapon Switch -->
+    <div class="form-check form-switch mb-3">
+      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+      <label class="form-check-label text-light" for="flexSwitchCheckDefault">Has Special Weapon</label>
+    </div>
+    <!-- Special Weapon -->
+    <div class="form-floating">
+      <select class="form-select mb-3" id="floatingSelect">
+        <option value="" selected disabled="disabled" hidden>Select your Special Weapon</option>
+        <option value="0">Power Fist</option>
+        <option value="1">Chainsword</option>
+        <option value="2">Lightning Claw</option>
+      </select>
+      <label for="floatingSelect">Squad</label>
+    </div>
+    <!-- Heavy Weapon Switch -->
+    <div class="form-check form-switch mb-3">
+      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+      <label class="form-check-label text-light" for="flexSwitchCheckDefault">Has Heavy Weapon</label>
+    </div>
+    <!-- Heavy Weapon -->
+    <div class="form-floating">
+      <select class="form-select" id="floatingSelect">
+        <option value="" selected disabled="disabled" hidden>Select your Heavy Weapon</option>
+        <option value="0">Power Fist</option>
+        <option value="1">Chainsword</option>
+        <option value="2">Lightning Claw</option>
+      </select>
+      <label for="floatingSelect">Squad</label>
+    </div>
+  </form>
+
+  <script src="/js/main.js"></script>
+</body>
+
+</html>
